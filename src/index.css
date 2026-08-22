@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+
+  --color-navy-950: #071c2c;
+  --color-navy-900: #0b2a3f;
+  --color-navy-800: #103d59;
+  --color-navy-700: #16506f;
+  --color-navy-600: #2c6488;
+  --color-navy-500: #547c9a;
+  --color-navy-400: #8aa4b8;
+  --color-navy-300: #b3c4d1;
+  --color-navy-200: #d3dee6;
+  --color-navy-100: #e7edf1;
+  --color-navy-50: #f3f6f8;
+
+  --color-teal-900: #063d3a;
+  --color-teal-800: #0a5451;
+  --color-teal-700: #0e6b66;
+  --color-teal-600: #128078;
+  --color-teal-500: #17968c;
+  --color-teal-400: #3fb3a8;
+  --color-teal-300: #75c8bf;
+  --color-teal-200: #a8ddd6;
+  --color-teal-100: #e3f4f1;
+  --color-teal-50: #f1faf8;
+
+  --color-gold-700: #a3781f;
+  --color-gold-600: #c2952c;
+  --color-gold-500: #d9ab3c;
+  --color-gold-400: #e6c169;
+  --color-gold-200: #f2ddab;
+  --color-gold-100: #fbf1dd;
+  --color-gold-50: #fef9ef;
+
+  --animate-blob: blob 18s infinite ease-in-out;
+  --animate-float: float 6s infinite ease-in-out;
+}
+
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(3%, -4%) scale(1.08); }
+  66% { transform: translate(-3%, 3%) scale(0.95); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #ffffff;
+  color: var(--color-navy-950);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background-color: var(--color-gold-400);
+  color: var(--color-navy-950);
+}
