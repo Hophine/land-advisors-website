@@ -69,11 +69,11 @@ export function Navbar() {
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="overflow-hidden bg-white lg:hidden"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="bg-white lg:hidden"
           >
             <div className="flex flex-col gap-1 px-6 pb-6">
               {nav.map((item) => (
@@ -81,7 +81,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm font-medium text-navy-800 hover:bg-teal-50 hover:text-teal-700"
+                  className="touch-manipulation rounded-lg px-3 py-2.5 text-sm font-medium text-navy-800 hover:bg-teal-50 hover:text-teal-700"
                 >
                   {item.label}
                 </a>
