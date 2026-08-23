@@ -29,14 +29,17 @@ export function Leadership() {
         </p>
       </Reveal>
 
-      <Stagger className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-3" staggerDelay={0.1}>
+      <Stagger
+        className="mt-14 flex snap-x snap-mandatory gap-6 overflow-x-auto pb-4 md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:pb-0"
+        staggerDelay={0.1}
+      >
         {team.map((member) => (
           <motion.div
             key={member.key}
             variants={staggerItem}
             whileHover={{ y: -6 }}
             transition={{ type: "spring", stiffness: 300, damping: 22 }}
-            className="flex flex-col rounded-2xl border border-navy-900/8 bg-white p-6 shadow-sm shadow-navy-900/5"
+            className="flex w-[80%] flex-shrink-0 snap-center flex-col rounded-2xl border border-navy-900/8 bg-white p-6 shadow-sm shadow-navy-900/5 sm:w-[60%] md:w-auto md:flex-shrink md:snap-align-none"
           >
             <div className="relative">
               <ImagePlaceholder
