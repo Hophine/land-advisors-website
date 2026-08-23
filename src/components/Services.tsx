@@ -10,7 +10,7 @@ import {
   Search,
   ListChecks,
   GraduationCap,
-  Plus,
+  ChevronDown,
 } from "lucide-react";
 import { services } from "../content";
 import { Section, Eyebrow } from "./ui/Section";
@@ -64,11 +64,11 @@ export function Services() {
                   <Icon className="h-6 w-6" strokeWidth={1.75} />
                 </span>
                 <motion.span
-                  animate={{ rotate: isOpen ? 45 : 0 }}
+                  animate={{ rotate: isOpen ? 180 : 0 }}
                   transition={{ duration: 0.25 }}
                   className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-navy-50 text-navy-700"
                 >
-                  <Plus className="h-4 w-4" />
+                  <ChevronDown className="h-4 w-4" />
                 </motion.span>
               </div>
 
