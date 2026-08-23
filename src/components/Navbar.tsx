@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, MessageCircle } from "lucide-react";
-import { brand, nav, whatsapp } from "../content";
+import { Menu, X } from "lucide-react";
+import { brand, nav } from "../content";
+import { images } from "../images";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,11 +26,15 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="#top" className="flex items-center gap-2.5">
-          <svg viewBox="0 0 64 64" className="h-8 w-8" aria-hidden="true">
-            <rect width="64" height="64" rx="14" fill="#0a5451" />
-            <path d="M32 12L52 28V50H38V36H26V50H12V28L32 12Z" fill="#f1faf8" />
-            <rect x="26" y="36" width="12" height="14" fill="#d9ab3c" />
-          </svg>
+          {images.logo.src ? (
+            <img src={images.logo.src} alt={images.logo.alt} className="h-9 w-auto object-contain" />
+          ) : (
+            <svg viewBox="0 0 64 64" className="h-8 w-8" aria-hidden="true">
+              <rect width="64" height="64" rx="14" fill="#08696b" />
+              <path d="M32 12L52 28V50H38V36H26V50H12V28L32 12Z" fill="#ffffff" />
+              <rect x="26" y="36" width="12" height="14" fill="#0a0a0a" />
+            </svg>
+          )}
           <span
             className={`font-display text-sm font-bold tracking-tight sm:text-base ${
               scrolled ? "text-navy-950" : "text-navy-950"
@@ -50,18 +55,6 @@ export function Navbar() {
             </a>
           ))}
         </nav>
-
-        <div className="hidden lg:block">
-          <a
-            href={whatsapp.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-teal-700"
-          >
-            <MessageCircle className="h-4 w-4" />
-            WhatsApp
-          </a>
-        </div>
 
         <button
           type="button"
@@ -93,15 +86,6 @@ export function Navbar() {
                   {item.label}
                 </a>
               ))}
-              <a
-                href={whatsapp.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-teal-600 px-5 py-3 text-sm font-semibold text-white"
-              >
-                <MessageCircle className="h-4 w-4" />
-                Chat on WhatsApp
-              </a>
             </div>
           </motion.div>
         )}

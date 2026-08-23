@@ -31,7 +31,6 @@ export const nav = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Leadership", href: "#leadership" },
-  { label: "Experience", href: "#experience" },
   { label: "Why Us", href: "#why-us" },
   { label: "Contact", href: "#contact" },
 ];
@@ -192,74 +191,11 @@ export const team: TeamMember[] = [
     key: "hyera",
     name: "Adv. Paulo Patience Hyera",
     title: "Company Secretary",
-    credentials: "Bachelor of Laws (LLB), Ruaha University · Active Member, Tanganyika Law Society (TLS)",
+    credentials: "Bachelor of Laws (LLB), Iringa University · Active Member, Tanganyika Law Society (TLS)",
     bio: "Corporate law and governance specialist; Founder & Principal Advocate of Wakili Wako & Associates, with expertise in commercial law, property & land law, contract drafting, and dispute resolution. Advises the Board on compliance, statutory filings, and corporate governance.",
   },
 ];
 
-export type ExperienceItem = {
-  key: "subdivision" | "agaKhan" | "jehovah" | "dreamrise" | "crdb" | "lodges";
-  client: string;
-  assignment: string;
-  location: string;
-  year: string;
-  status: string;
-};
-
-export const experience: ExperienceItem[] = [
-  {
-    key: "subdivision",
-    client: "Prof. Louis Azaria Mbughuni",
-    assignment: "Valuation of Land for Subdivision Advisory",
-    location: "Dar es Salaam",
-    year: "2025",
-    status: "Completed",
-  },
-  {
-    key: "agaKhan",
-    client: "The Aga Khan Health Service Tanzania",
-    assignment: "Valuation of Plant & Machinery",
-    location: "Dar es Salaam",
-    year: "2025",
-    status: "Completed",
-  },
-  {
-    key: "jehovah",
-    client: "Association of Jehovah's Witness of Tanzania",
-    assignment: "Real Estate Market Appraisal",
-    location: "Mtwara",
-    year: "2026",
-    status: "Completed",
-  },
-  {
-    key: "dreamrise",
-    client: "Dreamrise Investment Ltd",
-    assignment: "Valuation of an Industrial Facility for Tax Assessment",
-    location: "Dar es Salaam",
-    year: "2026",
-    status: "Completed",
-  },
-  {
-    key: "crdb",
-    client: "CRDB Bank PLC",
-    assignment: "Property Verification for Loan Processing",
-    location: "Dar es Salaam",
-    year: "2026",
-    status: "Completed",
-  },
-  {
-    key: "lodges",
-    client: "Hotels & Lodges (T) Ltd",
-    assignment:
-      "Valuation of Hotels (Seronera Wildlife Lodge, Lobo Wildlife Lodge & Lake Manyara Wildlife Lodge) for Insurance Purpose",
-    location: "Serengeti National Park & Lake Manyara",
-    year: "2026",
-    status: "Completed",
-  },
-];
-
-export const clientSectors =
-  "Our assignments span commercial banks & financial institutions, government institutions & public agencies, NGOs, corporate organizations, and private companies & individuals.";
 
 export const whyChooseUs = [
   { label: "Registered & Licensed Valuers (VRB)" },

@@ -10,7 +10,7 @@ export function WhyChooseUs() {
   return (
     <Section id="why-us" tone="dark">
       <Reveal className="mx-auto max-w-2xl text-center">
-        <Eyebrow className="bg-gold-500/15 text-gold-400">Why Choose Us</Eyebrow>
+        <Eyebrow className="bg-teal-400/15 text-teal-300">Why Choose Us</Eyebrow>
         <h2 className="font-display mt-5 text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Credentials you can rely on
         </h2>
@@ -27,7 +27,7 @@ export function WhyChooseUs() {
               transition={{ type: "spring", stiffness: 300, damping: 22 }}
               className="flex flex-col items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold-500/15 text-gold-400">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-400/15 text-teal-300">
                 <Icon className="h-5 w-5" strokeWidth={1.75} />
               </span>
               <p className="text-sm font-semibold leading-snug text-white/90">{item.label}</p>

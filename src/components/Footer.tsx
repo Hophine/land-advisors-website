@@ -1,5 +1,6 @@
-import { MessageCircle, Phone, Mail } from "lucide-react";
-import { brand, contact, footerCopy, nav, whatsapp } from "../content";
+import { Phone, Mail } from "lucide-react";
+import { brand, contact, footerCopy, nav } from "../content";
+import { images } from "../images";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -7,14 +8,18 @@ export function Footer() {
   return (
     <footer className="bg-navy-950 pt-16 text-white/70">
       <div className="mx-auto max-w-7xl px-6 pb-10 lg:px-8">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
             <div className="flex items-center gap-2.5">
-              <svg viewBox="0 0 64 64" className="h-8 w-8" aria-hidden="true">
-                <rect width="64" height="64" rx="14" fill="#17968c" />
-                <path d="M32 12L52 28V50H38V36H26V50H12V28L32 12Z" fill="#071c2c" />
-                <rect x="26" y="36" width="12" height="14" fill="#d9ab3c" />
-              </svg>
+              {images.logo.src ? (
+                <img src={images.logo.src} alt={images.logo.alt} className="h-9 w-auto object-contain" />
+              ) : (
+                <svg viewBox="0 0 64 64" className="h-8 w-8" aria-hidden="true">
+                  <rect width="64" height="64" rx="14" fill="#08696b" />
+                  <path d="M32 12L52 28V50H38V36H26V50H12V28L32 12Z" fill="#ffffff" />
+                  <rect x="26" y="36" width="12" height="14" fill="#0a0a0a" />
+                </svg>
+              )}
               <span className="font-display text-sm font-bold tracking-tight text-white">
                 {brand.name}
               </span>
@@ -49,22 +54,6 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display text-sm font-semibold text-white">Talk to Us</h4>
-            <p className="mt-4 text-sm leading-relaxed">
-              Have a question about a valuation, land matter, or investment? Message us directly.
-            </p>
-            <a
-              href={whatsapp.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 rounded-full bg-teal-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-teal-700"
-            >
-              <MessageCircle className="h-4 w-4" />
-              WhatsApp
-            </a>
           </div>
         </div>
 

@@ -28,7 +28,7 @@ export function Hero() {
           transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute -bottom-40 right-[-6rem] h-[32rem] w-[32rem] rounded-full bg-gold-500/15 blur-3xl"
+          className="absolute -bottom-40 right-[-6rem] h-[32rem] w-[32rem] rounded-full bg-white/10 blur-3xl"
           animate={{ x: [0, -30, 0], y: [0, -20, 0], scale: [1, 1.15, 1] }}
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -46,7 +46,7 @@ export function Hero() {
         <motion.div variants={container} initial="hidden" animate="show">
           <motion.span
             variants={item}
-            className="inline-block rounded-full border border-gold-500/30 bg-gold-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-gold-400"
+            className="inline-block rounded-full border border-teal-400/30 bg-teal-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-teal-300"
           >
             {hero.eyebrow}
           </motion.span>

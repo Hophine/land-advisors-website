@@ -24,7 +24,7 @@ export function Section({ id, children, className = "", tone = "light" }: Sectio
 export function Eyebrow({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
     <span
-      className={`inline-block rounded-full bg-gold-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-gold-700 ${className}`}
+      className={`inline-block rounded-full bg-teal-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-teal-700 ${className}`}
     >
       {children}
     </span>

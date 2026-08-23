@@ -1,10 +1,8 @@
 import { MessageCircle, MapPin, Phone, Mail } from "lucide-react";
 import { brand, contact, whatsapp } from "../content";
-import { images } from "../images";
 import { Section, Eyebrow } from "./ui/Section";
 import { Reveal } from "./ui/Reveal";
 import { Button } from "./ui/Button";
-import { ImagePlaceholder } from "./ui/ImagePlaceholder";
 
 export function Contact() {
   return (
@@ -15,7 +13,7 @@ export function Contact() {
           <h2 className="font-display mt-5 text-3xl font-bold tracking-tight text-navy-950 sm:text-4xl">
             {brand.tagline}
           </h2>
-          <p className="mt-3 text-sm font-semibold uppercase tracking-wide text-gold-700">
+          <p className="mt-3 text-sm font-semibold uppercase tracking-wide text-teal-700">
             {brand.slogan}
           </p>
 
@@ -54,7 +52,7 @@ export function Contact() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1} className="space-y-6">
+        <Reveal delay={0.1}>
           <div className="overflow-hidden rounded-2xl border border-navy-900/10 shadow-sm">
             <iframe
               title="Land Advisors location map"
@@ -64,7 +62,6 @@ export function Contact() {
               referrerPolicy="no-referrer-when-downgrade"
             />
           </div>
-          <ImagePlaceholder slot={images.contact} aspect="aspect-[16/9]" />
         </Reveal>
       </div>
     </Section>

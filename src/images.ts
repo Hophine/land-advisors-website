@@ -12,12 +12,12 @@ export type ImageSlot = {
 
 export const images = {
   heroBackground: {
-    src: "",
-    alt: "Dar es Salaam skyline / real estate development",
+    src: "/images/serving-all-of-tanzania.jpg",
+    alt: "Land Advisors serving all of Tanzania",
     caption: "Add hero photo here",
   },
   about: {
-    src: "",
+    src: "/images/about.jpeg",
     alt: "Land Advisors office or Dar es Salaam property skyline",
     caption: "Add about-section photo here",
   },
@@ -27,21 +27,13 @@ export const images = {
     caption: "Add office / location photo here",
   },
   logo: {
-    src: "",
+    src: "/images/logo.png",
     alt: "Land Advisors Co. Limited logo",
     caption: "Add high-res logo file here",
   },
   team: {
-    mbunda: { src: "", alt: "FRV. Nelson S. Mbunda", caption: "Add headshot" },
-    saule: { src: "", alt: "FRV. Gerald S. Saule", caption: "Add headshot" },
-    hyera: { src: "", alt: "Adv. Paulo Patience Hyera", caption: "Add headshot" },
-  },
-  experience: {
-    subdivision: { src: "", alt: "Land subdivision advisory", caption: "Add project photo" },
-    agaKhan: { src: "", alt: "Plant & machinery valuation", caption: "Add project photo" },
-    jehovah: { src: "", alt: "Real estate market appraisal, Mtwara", caption: "Add project photo" },
-    dreamrise: { src: "", alt: "Industrial facility valuation", caption: "Add project photo" },
-    crdb: { src: "", alt: "Property verification for loan processing", caption: "Add project photo" },
-    lodges: { src: "", alt: "Serengeti & Lake Manyara wildlife lodges", caption: "Add project photo" },
+    mbunda: { src: "/images/nelson.jpeg", alt: "FRV. Nelson S. Mbunda", caption: "Add headshot" },
+    saule: { src: "/images/gerald.jpeg", alt: "FRV. Gerald S. Saule", caption: "Add headshot" },
+    hyera: { src: "/images/paulo.jpeg", alt: "Adv. Paulo Patience Hyera", caption: "Add headshot" },
   },
 } as const satisfies Record<string, ImageSlot | Record<string, ImageSlot>>;

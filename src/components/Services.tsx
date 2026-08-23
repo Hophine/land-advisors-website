@@ -89,7 +89,7 @@ export function Services() {
                   >
                     {service.items.map((sub) => (
                       <li key={sub} className="flex items-start gap-2 text-sm text-navy-700">
-                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gold-500" />
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-teal-500" />
                         {sub}
                       </li>
                     ))}
