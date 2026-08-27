@@ -36,4 +36,11 @@ export const images = {
     saule: { src: "/images/gerald.jpeg", alt: "FRV. Gerald S. Saule", caption: "Add headshot" },
     hyera: { src: "/images/paulo.jpeg", alt: "Adv. Paulo Patience Hyera", caption: "Add headshot" },
   },
+  experience: {
+    agaKhan: { src: "/images/agakhan.jpeg", alt: "The Aga Khan Hospital, Dar es Salaam", caption: "Add client logo" },
+    jehovah: { src: "/images/jw.jpeg", alt: "Jehovah's Witnesses of Tanzania", caption: "Add client logo" },
+    dreamrise: { src: "/images/megapipes.jpeg", alt: "Mega Pipes Solutions Ltd", caption: "Add client logo" },
+    crdb: { src: "/images/crdb.jpeg", alt: "CRDB Bank PLC", caption: "Add client logo" },
+    lodges: { src: "/images/hotel-and-lodges.jpeg", alt: "Hotels & Lodges (T) Ltd", caption: "Add client logo" },
+  },
 } as const satisfies Record<string, ImageSlot | Record<string, ImageSlot>>;
