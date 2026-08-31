@@ -12,12 +12,12 @@ export type ImageSlot = {
 
 export const images = {
   heroBackground: {
-    src: "/images/serving-all-of-tanzania.jpg",
+    src: "/images/first-page.jpeg",
     alt: "Land Advisors serving all of Tanzania",
     caption: "Add hero photo here",
   },
   about: {
-    src: "/images/about.jpeg",
+    src: "/images/second-page.jpeg",
     alt: "Land Advisors office or Dar es Salaam property skyline",
     caption: "Add about-section photo here",
   },
