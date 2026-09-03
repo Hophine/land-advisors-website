@@ -92,7 +92,20 @@ export function Hero() {
               className="border-white/15 bg-white/5 text-white/50 backdrop-blur-sm"
             />
           </motion.div>
-          <div className="absolute -bottom-6 -left-6 hidden rounded-2xl border border-white/10 bg-white/95 px-6 py-4 shadow-xl backdrop-blur sm:block">
+
+          <motion.div
+            animate={{ y: [0, -8, 0] }}
+            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            className="absolute -bottom-10 -left-8 w-40 overflow-hidden rounded-2xl border-4 border-navy-950 shadow-xl sm:w-52 lg:w-56"
+          >
+            <ImagePlaceholder
+              slot={images.heroSecondary}
+              aspect="aspect-[4/3]"
+              className="!rounded-none border-white/15 bg-white/5 text-white/50 backdrop-blur-sm"
+            />
+          </motion.div>
+
+          <div className="absolute -top-5 right-4 hidden rounded-2xl border border-white/10 bg-white/95 px-6 py-4 shadow-xl backdrop-blur sm:block">
             <p className="text-xs font-semibold uppercase tracking-wide text-navy-500">Serving</p>
             <p className="font-display text-lg font-bold text-navy-950">All of Tanzania</p>
           </div>

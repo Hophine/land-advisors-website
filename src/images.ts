@@ -16,8 +16,13 @@ export const images = {
     alt: "Land Advisors serving all of Tanzania",
     caption: "Add hero photo here",
   },
+  heroSecondary: {
+    src: "/images/serving-all-of-tanzania.jpg",
+    alt: "Land Advisors serving clients across Tanzania",
+    caption: "Add secondary hero photo here",
+  },
   about: {
-    src: "/images/second-page.jpeg",
+    src: "/images/about.jpeg",
     alt: "Land Advisors office or Dar es Salaam property skyline",
     caption: "Add about-section photo here",
   },

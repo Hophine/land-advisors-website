@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MapPin, CalendarDays, CheckCircle2, Building2 } from "lucide-react";
+import { MapPin, CheckCircle2, Building2 } from "lucide-react";
 import { experience, clientSectors } from "../content";
 import { images } from "../images";
 import { Section, Eyebrow } from "./ui/Section";
@@ -58,10 +58,6 @@ export function Experience() {
 
                     <div className="p-5 lg:flex-1">
                       <div className="flex flex-wrap items-center gap-3 text-xs font-semibold text-navy-500">
-                        <span className="inline-flex items-center gap-1">
-                          <CalendarDays className="h-3.5 w-3.5" />
-                          {exp.year}
-                        </span>
                         <span className="inline-flex items-center gap-1">
                           <MapPin className="h-3.5 w-3.5" />
                           {exp.location}
